@@ -7,6 +7,13 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            
+            NavigationView {
+                NavigationLink(destination: Text("Second View")) {
+                    Text("Hello, World!")
+                }
+                .navigationTitle("Navigation")
+            }
         }
     }
 }

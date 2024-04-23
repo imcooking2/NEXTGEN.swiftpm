@@ -6,3 +6,13 @@
 //
 
 import SwiftUI
+
+struct MainHub: View {
+   
+    var body: some View {
+        HStack{
+            Circle()
+            
+        }
+    }
+}
