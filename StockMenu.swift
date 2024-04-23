@@ -7,4 +7,18 @@
 
 import SwiftUI
 
-struct 
+struct StockMenu: View {
+    let finalCalc:Double
+    
+    let totalValue: Double
+    
+    var dollarAverage:Double{
+        finalCalc == 0 ? 0 : totalValue/finalCalc
+    }
+    var body: some View {
+        HStack{
+            TextField("0.0", text:.constant(String(dollarAverage)))
+        }
+    }
+}
+
