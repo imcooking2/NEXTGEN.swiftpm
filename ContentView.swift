@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Binding var progress: Double
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -17,3 +19,4 @@ struct ContentView: View {
         }
     }
 }
+
